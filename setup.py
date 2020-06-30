@@ -27,6 +27,6 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    url="https://github.com/Adrian-Tamas/reportportal-behave-integration-client-lib",
+    url="https://github.com/vishu42/reportportal-behave-integration-client-lib.git",
     install_requires=requirements
 )
