@@ -62,7 +62,7 @@ class BehaveIntegrationService:
                                          level='ERROR',
                                          item_id=item_id)
 
-    def launch_service(self, tags):
+    def launch_service(self, tags, attributes):
         """
         Start the service that will communicate results to ReportPortal
         :param tags: the tags the test execution was triggered with
@@ -72,7 +72,9 @@ class BehaveIntegrationService:
             return self.service.start_launcher(name=self.rp_launch_name,
                                                start_time=timestamp(),
                                                tags=tags,
-                                               description=self.rp_launch_description)
+                                               attributes=attributes,                                               
+                                               description=self.rp_launch_description
+                                               )
 
     def before_feature(self, feature):
         """

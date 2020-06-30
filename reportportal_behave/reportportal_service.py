@@ -33,10 +33,11 @@ class IntegrationService:
                                                     token=self.rp_token,
                                                     verify_ssl=verify_ssl)
 
-    def start_launcher(self, name, start_time, description=None, tags=None):
+    def start_launcher(self, name, start_time, attributes, description=None, tags=None):
         return self.rp_async_service.start_launch(name=name,
                                                   start_time=start_time,
                                                   description=description,
+                                                  attributes=attributes,
                                                   tags=tags)
 
     def start_feature_test(self, **kwargs):
