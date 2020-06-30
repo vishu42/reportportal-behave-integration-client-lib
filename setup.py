@@ -11,7 +11,7 @@ with open("requirements.txt", "r") as f:
     requirements: List[str] = f.readlines()
 
 setup(
-    name='reportportal-behave-client',
+    name='reportportal-behave-client-custom',
     packages=find_packages(exclude=[""]),
     package_data={'': ['']},
     version=__version__,
